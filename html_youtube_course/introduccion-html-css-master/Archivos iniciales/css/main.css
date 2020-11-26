@@ -1,0 +1,152 @@
+/* estilos que aplique a todos los elementos */
+*{
+/* quitar espacios por defecto */
+    padding: 0;
+    margin: 0;
+    /* para guiarnos con la margen */
+    /*border: solid 1px #000; */
+}
+/* estilo a la etiqueta body */
+body{
+    /* background-color: rgb(100, 255, 150); */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+header{
+    background-image: url(../img/bradcam.png);
+    /* no se repita */
+    background-repeat: no-repeat;
+    /* que cubra todo */
+    background-size: 100% 100%;
+    /* dimensionar imagen, vh: view port ajusta al navegador la imagen de fondo */
+    height: 100vh;
+    color: white;
+}
+/* para un id es #main-container*/
+#main-container header #menu{
+    /* 50 arriba y abajo 0 derecha y izquiera */
+    padding:50px 0;
+}
+
+header #menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+header #menu ul li{
+    /* el listado de items queda en una sola linea */
+    display: inline-block;
+    padding: 10px;
+    /* alinear con logo app lab */
+    vertical-align: middle;
+}
+/* especificar color de links home y features */
+header #menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* atributo de estado: hover: el estilo se activa cuando el cursos esta sobre el link */
+
+header #menu ul li a:hover{
+    text-decoration: underline;
+}
+
+header #menu ul #logo{
+    margin-right: 40%;
+    margin-left: 100px;
+}
+
+/* *********** */
+
+#main-container header main{
+    margin:0 auto;
+    width: 1400px;  
+}
+
+#main-container header main div{
+    display: inline-block;
+    vertical-align: middle;   
+}
+
+
+#main-container header main .text h1{
+    font-size: 80px;
+}
+
+#main-container header main .text p{
+    font-size: 24px;
+    padding: 20px, 0;
+}
+
+
+button{
+    background-color: #24D9E6;
+    border: 0;
+    /* redondear boton */
+    
+    border-radius: 3px;
+    color: white;
+    /* que salga la manita */
+    
+    cursor: pointer;
+    font-size: 24px;
+    padding: 20px 25px;
+    margin: 40px 0;
+}
+button:hover{
+    background-color:#14929b;
+}
+
+#main-container header main .image{
+    text-align: right;
+    width: 700px;
+} 
+
+
+
+/* *********** */
+.layout{
+    width: 1280px;
+    margin: 250px auto;
+}
+
+#main-container .section .layout div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main-container .section .layout h3{
+    font-size: 48px;
+    padding: 25px 0;
+}
+
+#main-container .section .layout p{
+    padding: 25px 0;
+    line-height: 32px;
+}
+
+#main-container .section .layout-left .text{
+    width: 500px;
+}
+
+#main-container .section .layout-left .image{
+    width: 770px;
+    text-align: right;
+} 
+
+#main-container .section .layout-right .text{
+    width: 500px;
+}
+
+#main-container .section .layout-right .image{
+    width: 770px;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
